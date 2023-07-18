@@ -5,7 +5,7 @@ import NewTodoForm from "./NewTodoForm";
 function TodoList() {
   const [todos, setTodos] = useState([]);
 
-  // add a new todo
+  // new todo
   const create = newTodo => {
     setTodos(todos => [...todos, newTodo]);
   };
