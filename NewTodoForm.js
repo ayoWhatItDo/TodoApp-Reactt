@@ -8,7 +8,7 @@ function NewTodoForm({ createTodo }) {
     setTask(evt.target.value);
   };
 
-  const gatherInput = evt => {
+  const getInput = evt => {
     evt.preventDefault();
     createTodo({ task, id: uuid() });
     setTask("");
@@ -16,7 +16,7 @@ function NewTodoForm({ createTodo }) {
 
   return (
     <div>
-      <form onSubmit={gatherInput}>
+      <form onSubmit={getInput}>
         <label htmlFor="task">Task:</label>
         <input
           id="task"
