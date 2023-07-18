@@ -20,7 +20,6 @@ function Todo({ task = "default todo", id = "1", remove, update }) {
     setIsEditing(false);
   };
 
-  // default todo view
   let jsx = (
     <div>
       <li>{task}</li>
@@ -29,13 +28,12 @@ function Todo({ task = "default todo", id = "1", remove, update }) {
     </div>
   );
 
-  // todo view when editing
   if (isEditing) {
     jsx = (
       <div>
         <form onSubmit={handleUpdate}>
           <input type="text" value={editTask} onChange={handleChange} />
-          <button>Update!</button>
+          <button>Updating time! bb</button>
         </form>
       </div>
     );
